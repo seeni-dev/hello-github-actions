@@ -8,5 +8,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: "random"
       run: echo $MY_NAME "From github actions" 
+    - name: "action a"
+      uses: "./action-a"
     env:
       MY_NAME: "Seeni"
